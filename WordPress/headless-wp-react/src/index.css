@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #fff8f0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: 0.2s;
+}

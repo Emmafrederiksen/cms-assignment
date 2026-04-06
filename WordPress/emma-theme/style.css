@@ -1,0 +1,19 @@
+/*
+Theme Name: Emma Theme
+Author: Emma Frederiksen
+Description: Custom WordPress theme for CMS assignment
+Version: 1.0
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+article {
+  margin-bottom: 30px;
+}
