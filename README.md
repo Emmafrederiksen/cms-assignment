@@ -10,7 +10,6 @@ Dette projekt er lavet som en del af CMS-opgaven og indeholder arbejde med:
 ---
 
 ## Projektstruktur
-
 ```text
 cms-assignment/
 ├── Umbraco/
@@ -63,10 +62,20 @@ Der er udviklet et custom theme samt et plugin.
 - Indeholder templates (header, footer, index)
 - Registrerer custom post type: **Cakes**
 
+### Sådan sætter du temaet op:
+1. Kopier `emma-theme` mappen til `/wp-content/themes/`
+2. Gå ind i WordPress admin under Udseende → Temaer
+3. Aktivér `emma-theme`
+
 ### Plugin
 - Custom plugin: `emma-plugin`
 - Viser en besked i footer
 - Demonstrerer brug af hooks (`wp_footer`)
+
+### Sådan sætter du plugin'et op:
+1. Kopier `emma-plugin` mappen til `/wp-content/plugins/`
+2. Gå ind i WordPress admin under Plugins
+3. Aktivér `emma-plugin`
 
 ---
 
@@ -88,6 +97,12 @@ Funktionalitet:
 - Ændre antal
 - Simpel cart løsning
 
+### Sådan starter du React-appen:
+1. Gå ind i mappen `headless-wp-react`
+2. Kør `npm install`
+3. Kør `npm run dev`
+4. Åbn `http://localhost:5173` i browseren
+
 ---
 
 ## Docker (WordPress)
@@ -98,7 +113,7 @@ WordPress er sat op i Docker med:
 - Database (MariaDB)
 - phpMyAdmin
 
-### Start projektet: 
+### Start projektet:
 
 `docker compose up -d`
 
@@ -116,6 +131,14 @@ Der er oprettet et Umbraco projekt med:
 - .NET
 - SQL database via Docker
 - Container setup
+
+### Sådan sætter du Umbraco op:
+1. Installer .NET SDK
+2. Kør `dotnet new install Umbraco.Templates`
+3. Kør `dotnet new umbraco -n MyProject`
+4. Gå ind i mappen med `cd MyProject`
+5. Start projektet med `dotnet run`
+6. Åbn backoffice i browseren og opret en bruger
 
 Se mere i: `Umbraco/how-to.md`
 
@@ -158,5 +181,3 @@ WordPress egner sig godt til hurtige løsninger, mens headless og Umbraco giver 
 ## Skrevet af:
 
 Emma Øhlers Frederiksen
-
-
